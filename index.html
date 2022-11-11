@@ -7,29 +7,43 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>web animales</title>
    <link rel="stylesheet" href="style.css">
+   <script src="index.js"></script>
 </head>
 
 <body>
 
-   <nav>
-      <ul>
-         <li><a href="#">inicio</a></li>
-         <li><a href="#">sobre nosotros</a></li>
-         <li><a href="#"> pagina principal</a></li>
-         <li><a href="#">tipos animales</a>
-            <!--hacer menu desplegable javascrit-->
+   <header>
+      <nav>
+         <ul class="menu">
+            <li><a href="#">inicio</a></li>
+            <li><a href="#">sobre nosotros</a></li>
+            <li><a href="#"> pagina principal</a></li>
+            <li>
+               <a href="#" id="type_animals" onclick="toggleMenu()">tipos animales</a>
 
-         <li><img src="./imagenes/gato.jpeg" alt="gato"></li>
-      </ul>
-   </nav>
+               <ul class="submenu hidden" id="submenu_type_animals" onclick="closeMenu()">
+                  <li><a href="#">Perros</a></li>
+                  <li><a href="#">Gatos</a></li>
+                  <li><a href="#">Caballos</a></li>
+                  <li><a href="#">Peces</a></li>
+               </ul>
+            </li>
+            <li><img src="./imagenes/gato.jpeg" alt="gato"></li>
+         </ul>
+      </nav>
+   </header>
+
+
+
    <main>
-      <div class="badground"></div>
+      <div class="background"></div>
    </main>
 
    <footer>
       <span>hola</span>
       <span>adios</span>
    </footer>
+
 </body>
 
 </html>
